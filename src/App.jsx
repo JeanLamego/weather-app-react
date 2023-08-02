@@ -21,11 +21,13 @@ function App() {
         placeholder='Escolha o local'
         />
       </div>
-      <div className='bottom'>
+      <div className="bottom">
         <p className="weather-conditions">Clear</p>
-        <p className="feelslike">50ºc</p>
-        <p className="humidity">50%</p>
-        <h2 className="temperature">34ºC</h2>
+        <div className="description">
+          <p className="feelslike">50ºc</p>
+          <p className="humidity">50%</p>
+        </div>
+          <h2 className="temperature">34ºC</h2>
       </div>
     </div>
   )

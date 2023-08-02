@@ -11,12 +11,19 @@
 }
 
 body{
-  background-image: url('https://source.unsplash.com/414x896/?riodejaneiro');
+  background-image: url('https://source.unsplash.com/420x900/?riodejaneiro');
   width: 100%;
   min-height: 100vh;  
 }
+
 .App{
-margin: 1rem;
+margin: 2rem;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
 }
 .header{
   display: flex;
@@ -36,4 +43,37 @@ input{
 input::placeholder{
   color: rgba(0, 0, 0, 0.68);
   font-weight: bold;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f800;
+  color: #f8f8f8;
+  text-shadow: 0.1em 0.1em 0.4em black;
+  border: 1px solid red;
+  
+  
+}
+.description{
+  display: flex;
+  gap: 2rem;
+  display: flex;
+  
+  
+}
+.weather-conditions{
+ 
+  font-size: 2rem;
+}
+.humidity, .feelslike{
+  font-size: 2rem;
+}
+
+.temperature{
+  
+  font-size: 8rem;
+  font-weight: 100;
+  
+  
 }
