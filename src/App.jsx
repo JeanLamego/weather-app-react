@@ -6,26 +6,35 @@ import './App.css'
 
 function App() {
 
+
   const[data, setData] = useState({});
   const [location, setLocation] = useState("");
-
+  
+  const larguraTela = window.innerWidth;
+  const alturaTela = window.innerHeight;
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=de44d6a961bec9dd4dce6385403fe381&lang=pt_br`
 
-  const searchLocation = (event) =>{
+  const [backgroundStyle, setBackgroundStyle] = useState({ backgroundImage: `url(https://source.unsplash.com/${larguraTela}x${alturaTela}/?${location})` });
+
+  // const [backgroundStyle, setBackgroundStyle] = useState({ backgroundImage: `url(https://source.unsplash.com/414x896/?riodejaneiro)` });
+
+    const searchLocation = (event) =>{
     if(event.key ==='Enter'){
     axios.get(url).then((response)=>{
       setData(response.data)
-      console.log(response.data)
+    
     })
+    setBackgroundStyle({ backgroundImage: `url(https://source.unsplash.com/${larguraTela}x${alturaTela}/?${location})` });
     setLocation('')
+    
   }
   }
 
   // https://source.unsplash.com/414x896/?riodejaneiro
 
   return (
-    <div className="App">
+    <div className="App" style={backgroundStyle}>
       <div className="container">
         <div className='header'>
           <h2 className="location">{data.name}</h2>
@@ -40,7 +49,8 @@ function App() {
           />
         </div>
         <div className="bottom">
-          <p className="weather-conditions"></p>
+          {data.weather? <p className="weather-conditions"><img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`}/>{data.weather[0].description}</p> : null}
+          
           <div className="description">
             <p className="feelslike">50ºc</p>
             <p className="humidity">50%</p>

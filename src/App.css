@@ -15,15 +15,17 @@
 .App{
     background-image: url('https://source.unsplash.com/420x900/?riodejaneiro');
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    min-height: 100vh;  
+    height: 100vh;  
+    overflow: hidden;
    
 }
 .container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   padding-top:1rem ;
 }
 .header{
@@ -62,13 +64,15 @@ input::placeholder{
 .description{
   display: flex;
   gap: 2rem;
-  display: flex;
+  
   
   
 }
 .weather-conditions{
- 
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 }
 .humidity, .feelslike{
   font-size: 2rem;
