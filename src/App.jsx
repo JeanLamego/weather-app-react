@@ -9,6 +9,7 @@ function App() {
 
   const[data, setData] = useState({});
   const [location, setLocation] = useState("");
+  const [feelsLike, setFeelsLike] = useState("")
   
   const larguraTela = window.innerWidth;
   const alturaTela = window.innerHeight;
@@ -16,7 +17,6 @@ function App() {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=de44d6a961bec9dd4dce6385403fe381&lang=pt_br`
 
   const [backgroundStyle, setBackgroundStyle] = useState({ backgroundImage: `url(https://source.unsplash.com/${larguraTela}x${alturaTela}/?${location})` });
-
   // const [backgroundStyle, setBackgroundStyle] = useState({ backgroundImage: `url(https://source.unsplash.com/414x896/?riodejaneiro)` });
 
     const searchLocation = (event) =>{
