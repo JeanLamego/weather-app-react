@@ -19,6 +19,7 @@ function App() {
   const [backgroundStyle, setBackgroundStyle] = useState({ backgroundImage: `url(https://source.unsplash.com/${larguraTela}x${alturaTela}/?${location})` });
   // const [backgroundStyle, setBackgroundStyle] = useState({ backgroundImage: `url(https://source.unsplash.com/414x896/?riodejaneiro)` });
 
+    
     const searchLocation = (event) =>{
     if(event.key ==='Enter'){
     axios.get(url).then((response)=>{
