@@ -26,8 +26,8 @@ function App() {
       setData(response.data)
     
     })
-    setBackgroundStyle({ backgroundImage: `url(https://source.unsplash.com/${larguraTela}x${alturaTela}/?${location})` });
-    setLocation('')
+    // setBackgroundStyle({ backgroundImage: `url(https://source.unsplash.com/${larguraTela}x${alturaTela}/?${location})` });
+    // setLocation('')
     
   }
   }
