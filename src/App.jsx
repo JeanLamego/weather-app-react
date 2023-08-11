@@ -10,6 +10,9 @@ function App() {
   const[data, setData] = useState({});
   const [location, setLocation] = useState("");
   const [feelsLike, setFeelsLike] = useState("")
+
+
+ 
   
   const larguraTela = window.innerWidth;
   const alturaTela = window.innerHeight;
@@ -26,8 +29,8 @@ function App() {
       setData(response.data)
     
     })
-    // setBackgroundStyle({ backgroundImage: `url(https://source.unsplash.com/${larguraTela}x${alturaTela}/?${location})` });
-    // setLocation('')
+    setBackgroundStyle({ backgroundImage: `url(https://source.unsplash.com/${larguraTela}x${alturaTela}/?${location})` });
+    setLocation('')
     
   }
   }
@@ -36,6 +39,7 @@ function App() {
 
   return (
     <div className="App" style={backgroundStyle}>
+      
       <div className="container">
         <div className='header'>
           <h2 className="location">{data.name}</h2>
@@ -53,8 +57,11 @@ function App() {
           {data.weather? <p className="weather-conditions"><img src={`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`}/>{data.weather[0].description}</p> : null}
           
           <div className="description">
-            <p className="feelslike">50ºc</p>
-            <p className="humidity">50%</p>
+            {data.main ? <p className="feelslike">{data.main.feels_like.toFixed()}º</p>:null}
+
+            {data.main ? <p className="humidity"><img src={}/>{data.main.humidity.toFixed()}%</p>:null}
+            
+            
           </div>
           <div className="temp-box">
 
