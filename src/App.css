@@ -76,14 +76,12 @@ input::placeholder{
 }
 .humidity, .feelslike{
   font-size: 2rem;
+  display: flex;
+  align-items: center;
 }
 
-.temp-box{
 
 
-
-  
-}
 .temperature{
   line-height: 7rem;
   font-size: 8rem;
