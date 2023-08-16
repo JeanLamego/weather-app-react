@@ -2,7 +2,8 @@ import { useState } from 'react';
 import axios from 'axios';
 
 import './App.css';
-import Timezone from './Components/Timezone';
+import Timezone from './Components/Timezone.jsx';
+
 
 function App() {
   const [data, setData] = useState({});
@@ -27,7 +28,7 @@ function App() {
     }
   };
 
-  // https://source.unsplash.com/414x896/?riodejaneiro
+  
 
   return (
     <div className="App" style={backgroundStyle}>
@@ -35,7 +36,8 @@ function App() {
       <div className="container">
         <div className="header">
           <h2 className="location">{data.name}</h2>
-          <p className="clock"><Timezone /></p>
+          
+          <Timezone />
         </div>
         <div className="mid-container">
           <input

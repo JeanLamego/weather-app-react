@@ -1,16 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect  } from 'react';
 import { DateTime } from 'luxon'; // Importe diretamente do pacote
 
+
 function Timezone() {
-  const now = DateTime.now();
+
+
+  
+
+  const [formattedTime, setFormattedTime] = useState();
 
   useEffect(() => {
-    console.log(now);
+const interval = setInterval(()=>{
+  setFormattedTime(DateTime.now().toFormat("HH:mm:ss"));
+},1000)
+    return ()=>{
+      clearInterval(interval);
+    }
   }, []);
 
   return (
     <div>
-      <p>Verifique o console para ver o resultado.</p>
+      <p className="clock">{formattedTime}</p>
     </div>
   );
 }

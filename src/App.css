@@ -95,3 +95,13 @@ input::placeholder{
   text-shadow: 0.1em 0.1em 0.4em black;
   
 }
+
+@media only screen and (min-width: 900px){
+.container{
+margin: 2rem auto;
+justify-content: space-around;
+width: 33%;
+border: 1px solid red;
+height: 60%;
+}
+}
