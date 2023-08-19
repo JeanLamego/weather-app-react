@@ -33,6 +33,11 @@
   flex-direction: column;
   align-items: center;
 }
+.location, .clock{
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 0.1em 0.1em 0.4em #f8f8f8;
+}
 
 input{
   
@@ -78,6 +83,7 @@ input::placeholder{
   font-size: 2rem;
   display: flex;
   align-items: center;
+  text-shadow: 0.1em 0.1em 0.4em black;
 }
 
 
@@ -101,7 +107,6 @@ input::placeholder{
 margin: 2rem auto;
 justify-content: space-around;
 width: 33%;
-border: 1px solid red;
 height: 60%;
 }
 }
