@@ -60,13 +60,13 @@ function App() {
 
           <div className="description">
             {data.main ? (
-            <p className="feelslike"><img src="src/assets/feelslike.svg"/>{data.main.feels_like.toFixed()}º</p>) : null}
+            <p className="feelslike"><img src="public/assets/feelslike.svg"/>{data.main.feels_like.toFixed()}º</p>) : null}
 
             {data.main ? (
               <p className="humidity">
                 <img
                   className="droplet"
-                  src="src/assets/droplet.png"
+                  src="/assets/droplet.png"
                   width="32px"
                 />
                 {data.main.humidity.toFixed()}%
