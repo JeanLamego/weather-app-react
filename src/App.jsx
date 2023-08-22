@@ -68,7 +68,7 @@ function App() {
 
             {data.main ? (
               <p className="humidity">
-                <img src="./src/assets/drop.svg" width="32px" />
+                <img className="droplet"src="./src/assets/droplet.png" width="32px" />
                 {data.main.humidity.toFixed()}
                 %
               </p>
