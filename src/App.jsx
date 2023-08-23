@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
+import feelsLikeIcon from './assets/feelslike.svg';
 import "./App.css";
 import Timezone from "./Components/Timezone.jsx";
 
@@ -60,7 +61,7 @@ function App() {
 
           <div className="description">
             {data.main ? (
-            <p className="feelslike"><img src="public/assets/feelslike.svg"/>{data.main.feels_like.toFixed()}º</p>) : null}
+            <p className="feelslike"><img src={feelsLikeIcon}/>{data.main.feels_like.toFixed()}º</p>) : null}
 
             {data.main ? (
               <p className="humidity">
