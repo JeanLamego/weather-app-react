@@ -24,8 +24,7 @@ Welcome to the **Weather App**! This application provides you with real-time wea
 
 ## 📜 Technologies
 
-The Weather App was built with ReactJS which allows users to search for weather forecast information for different cities around the world. It utilizes the OpenWeather API to provide real-time weather information. Notably, its background dynamically adjusts according to user search terms, creating a personalized visual experience. Additionally, the website showcases the user's local time, ensuring up-to-date relevance for weather forecasts and plans it also displays the relevant information in a user-friendly and intuitive manner.
-
+The Weather App was built with ReactJS, allowing users to search for weather forecast information for different cities around the world. It utilizes the OpenWeather API to provide real-time weather information. My favorite aspect is that the background dynamically adjusts according to user search terms, creating a personalized visual experience. Additionally, the website displays the user's local time to complement the weather forecasts, and presents the relevant information in a user-friendly and intuitive manner.
 ## 🙌 Contribution and Feedback
 
 Contributions and feedback are highly appreciated! If you have suggestions for improvements or new features, please feel free to share your thoughts.
