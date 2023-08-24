@@ -24,7 +24,7 @@ Bem-vindo ao **Weather App**! Este aplicativo fornece a você informações clim
 
 ## 📜 Tecnologias
 
-O Weather App foi construído com ReactJS, o que permite aos usuários buscar informações de previsão do tempo para diferentes cidades ao redor do mundo. Ele utiliza a API do OpenWeather para fornecer informações climáticas em tempo real. Notavelmente, o plano de fundo se ajusta dinamicamente de acordo com os termos de pesquisa do usuário, criando uma experiência visual personalizada. Além disso, o site exibe o horário local do usuário, garantindo relevância atualizada para previsões climáticas e planos, além de exibir as informações relevantes de maneira amigável e intuitiva.
+O Weather App foi construído com ReactJS, permitindo aos usuários buscar informações de previsão do tempo para diferentes cidades ao redor do mundo. Ele utiliza a API do OpenWeather para fornecer informações climáticas em tempo real. minha parte favorita é que o plano de fundo se ajusta dinamicamente de acordo com os termos de pesquisa do usuário, criando uma experiência visual personalizada. Além disso, o site exibe o horário local do usuário para complementar as previsões climáticas, além de exibir as informações relevantes de maneira amigável e intuitiva.
 
 ## 🙌 Contribuição e Feedback
 
